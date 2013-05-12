@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-index.cgi - Example of audit search interface using Audit::DBI.
+index.cgi - Example of audit search interface using Audit::DBI and Audit::DBI::TT2.
 
 
 =head1 DESCRIPTION
