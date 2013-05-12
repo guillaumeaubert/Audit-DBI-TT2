@@ -143,7 +143,7 @@ Guillaume Aubert, C<< <aubertg at cpan.org> >>.
 =head1 BUGS
 
 Please report any bugs or feature requests through the web interface at
-L<https://github.com/guillaumeaubert/Audit-DBI/issues/new>.
+L<https://github.com/guillaumeaubert/Audit-DBI-TT2/issues/new>.
 I will be notified, and then you'll automatically be notified of progress on
 your bug as I make changes.
 
@@ -161,19 +161,19 @@ You can also look for information at:
 
 =item * GitHub's request tracker
 
-L<https://github.com/guillaumeaubert/Audit-DBI/issues>
+L<https://github.com/guillaumeaubert/Audit-DBI-TT2/issues>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Audit-DBI>
+L<http://annocpan.org/dist/Audit-DBI-TT2>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Audit-DBI>
+L<http://cpanratings.perl.org/d/Audit-DBI-TT2>
 
 =item * MetaCPAN
 
-L<https://metacpan.org/release/Audit-DBI>
+L<https://metacpan.org/release/Audit-DBI-TT2>
 
 =back
 
