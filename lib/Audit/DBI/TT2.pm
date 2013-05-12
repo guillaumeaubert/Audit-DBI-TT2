@@ -5,9 +5,10 @@ use warnings;
 
 use base 'Template::Plugin';
 
-use Template::Stash;
+use Class::Date qw();
 use Data::Dumper;
 use HTML::Entities qw();
+use Template::Stash;
 
 
 =head1 NAME
