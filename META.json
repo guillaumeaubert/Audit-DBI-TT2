@@ -1,0 +1,59 @@
+{
+   "abstract" : "A Template Toolkit plugin to display audit events recorded by L<Audit::DBI>.",
+   "author" : [
+      "Guillaume Aubert <aubertg@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "open_source"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Audit-DBI",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::FailWarnings" : "0",
+            "Test::More" : "0.94"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Class::Date" : "0",
+            "Data::Dumper" : "0",
+            "HTML::Entities" : "0",
+            "Template::Plugin" : "0",
+            "Template::Stash" : "0",
+            "perl" : "5.006"
+         }
+      }
+   },
+   "provides" : {
+      "Audit::DBI::TT2" : {
+         "file" : "lib/Audit/DBI/TT2.pm",
+         "version" : "v1.7.3"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/guillaumeaubert/Audit-DBI-TT2/issues"
+      },
+      "homepage" : "https://metacpan.org/release/Audit-DBI-TT2",
+      "license" : [
+         "http://www.gnu.org/licenses/gpl-3.0.txt"
+      ],
+      "repository" : {
+         "url" : "https://github.com/guillaumeaubert/Audit-DBI-TT2"
+      }
+   },
+   "version" : "v1.7.3"
+}
