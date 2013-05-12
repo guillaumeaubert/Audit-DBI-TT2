@@ -13,7 +13,7 @@ use Template::Stash;
 
 =head1 NAME
 
-Audit::DBI::TT2 - A Template Toolkit plugin to display audit events.
+Audit::DBI::TT2 - A Template Toolkit plugin to display audit events recorded by L<Audit::DBI>.
 
 
 =head1 VERSION

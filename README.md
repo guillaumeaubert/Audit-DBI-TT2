@@ -3,7 +3,8 @@ Audit-DBI-TT2
 
 [![Build Status](https://travis-ci.org/guillaumeaubert/Audit-DBI-TT2.png?branch=master)](https://travis-ci.org/guillaumeaubert/Audit-DBI-TT2)
 
-Audit data changes in your code and store searchable log records in a database.
+A Template Toolkit plugin to display audit events recorded by [Audit::DBI]
+(https://metacpan.org/release/Audit-DBI).
 
 
 INSTALLATION
