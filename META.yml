@@ -1,5 +1,5 @@
 ---
-abstract: 'A Template Toolkit plugin to display audit events recorded by L<Audit::DBI>.'
+abstract: 'A Template Toolkit plugin to display audit events recorded by Audit::DBI'
 author:
   - 'Guillaume Aubert <aubertg@cpan.org>'
 build_requires:
@@ -13,7 +13,7 @@ license: open_source
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Audit-DBI
+name: Audit-DBI-TT2
 provides:
   Audit::DBI::TT2:
     file: lib/Audit/DBI/TT2.pm

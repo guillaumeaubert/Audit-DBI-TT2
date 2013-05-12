@@ -3,7 +3,7 @@ require 5.006;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'NAME' => 'Audit::DBI',
+  'NAME' => 'Audit::DBI::TT2',
   'VERSION_FROM' => 'lib/Audit/DBI/TT2.pm',
   'PREREQ_PM' => {
                    'Class::Date' => 0,

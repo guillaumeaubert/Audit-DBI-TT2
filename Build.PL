@@ -35,7 +35,8 @@ my $class = Module::Build->subclass(
 );
 
 my $builder = $class->new(
-	module_name          => 'Audit::DBI',
+	module_name          => 'Audit::DBI::TT2',
+	dist_abstract        => 'A Template Toolkit plugin to display audit events recorded by Audit::DBI',
 	license              => 'GPL_3',
 	dist_author          => q{Guillaume Aubert <aubertg@cpan.org>},
 	dist_version_from    => 'lib/Audit/DBI/TT2.pm',
