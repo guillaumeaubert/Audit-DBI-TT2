@@ -7,7 +7,7 @@ use warnings;
 # consistent, testable output.
 BEGIN
 {
-	$ENV{'TZ'} = 'US/Eastern';
+	$ENV{'TZ'} = 'America/New_York';
 }
 
 use Audit::DBI::TT2;
