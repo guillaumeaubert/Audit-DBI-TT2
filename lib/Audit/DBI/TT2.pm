@@ -27,7 +27,30 @@ our $VERSION = '1.0.0';
 
 =head1 SYNOPSIS
 
+In your Perl code:
+
 	use Audit::DBI::TT2;
+	use Template;
+	
+	my $template = Template->new(
+		{
+			PLUGINS =>
+			{
+				audit => 'Audit::DBI::TT2',
+			},
+		}
+	) || die $Template::ERROR;
+
+In your TT2 template:
+
+	[% USE audit %]
+	[% FOREACH result IN audit.format_results( results ) %]
+		...
+	[% END %]
+
+Note: a fully operational example of a search interface for Audit::DBI events
+using this module for the display of the results is available in the C<example/>
+directory of this distribution.
 
 
 =head1 FUNCTIONS
