@@ -6,6 +6,7 @@ WriteMakefile
   'NAME' => 'Audit::DBI::TT2',
   'VERSION_FROM' => 'lib/Audit/DBI/TT2.pm',
   'PREREQ_PM' => {
+                   'Audit::DBI' => '1.008',
                    'Class::Date' => 0,
                    'Data::Dumper' => 0,
                    'HTML::Entities' => 0,
