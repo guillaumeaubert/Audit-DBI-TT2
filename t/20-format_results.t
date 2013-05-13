@@ -73,4 +73,4 @@ is(
 	$event->{'event_time_formatted'},
 	'2012-09-07 20:14:21',
 	'The event time is formatted correctly.',
-);
+) || diag( explain( \%ENV ) );
