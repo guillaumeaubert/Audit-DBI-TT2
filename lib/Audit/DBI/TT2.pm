@@ -32,27 +32,6 @@ our $VERSION = '1.0.0';
 
 =head1 FUNCTIONS
 
-=head2 new()
-
-Create a new Audit::DBI::TT2 object.
-
-=cut
-
-sub new
-{
-	my ( $class, $context ) = @_;
-	
-	my $self = bless(
-		{
-			_CONTEXT => $context,
-		},
-		$class,
-	);
-	
-	return $self;
-}
-
-
 =head2 format_results()
 
 Format the following fields for display as HTML:
