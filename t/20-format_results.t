@@ -3,6 +3,13 @@
 use strict;
 use warnings;
 
+# Override the timezone to be able to format the event's date and have a
+# consistent, testable output.
+BEGIN
+{
+	$ENV{'TZ'} = 'US/Eastern';
+}
+
 use Audit::DBI::TT2;
 use Scalar::Util;
 use Test::Exception;
