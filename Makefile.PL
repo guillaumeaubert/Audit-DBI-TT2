@@ -9,8 +9,10 @@ WriteMakefile
                    'Class::Date' => 0,
                    'Data::Dumper' => 0,
                    'HTML::Entities' => 0,
+                   'Scalar::Util' => 0,
                    'Template::Plugin' => 0,
                    'Template::Stash' => 0,
+                   'Test::Exception' => 0,
                    'Test::FailWarnings' => 0,
                    'Test::More' => '0.94'
                  },
