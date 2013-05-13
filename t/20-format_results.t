@@ -58,8 +58,8 @@ is(
 );
 is(
 	$event->{'information_formatted'},
-	'{<br/>&nbsp;&nbsp;test_event_id&nbsp;=&gt;&nbsp;2,<br/>&nbsp;&nbsp;'
-		. 'random_string&nbsp;=&gt;&nbsp;&#39;ABC1234&#39;<br/>}<br/>',
+	'{<br/>&nbsp;&nbsp;random_string&nbsp;=&gt;&nbsp;&#39;ABC1234&#39;,'
+		. '<br/>&nbsp;&nbsp;test_event_id&nbsp;=&gt;&nbsp;2<br/>}<br/>',
 	'The information is formatted correctly.',
 );
 is(
