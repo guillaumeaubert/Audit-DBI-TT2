@@ -50,7 +50,7 @@ my $builder = $class->new(
 	requires             =>
 	{
 		'perl'                 => 5.006,
-		'Audit::DBI'           => 1.008,
+		'Audit::DBI'           => 1.008001,
 		'Class::Date'          => 0,
 		'Data::Dumper'         => 0,
 		'HTML::Entities'       => 0,
