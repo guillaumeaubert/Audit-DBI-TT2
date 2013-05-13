@@ -49,8 +49,8 @@ In your TT2 template:
 	[% END %]
 
 Note: a fully operational example of a search interface for Audit::DBI events
-using this module for the display of the results is available in the C<example/>
-directory of this distribution.
+using this module for the display of the results is available in the
+C<examples/> directory of this distribution.
 
 
 =head1 FUNCTIONS
