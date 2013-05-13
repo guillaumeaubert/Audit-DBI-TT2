@@ -64,8 +64,7 @@ Format the following fields for display as HTML:
 
 sub format_results
 {
-	my ( $self ) = @_;
-	my $results = $self->{'_CONTEXT'}->{'STASH'}->{'results'} || [];
+	my ( $self, $results ) = @_;
 	
 	local $Class::Date::DATE_FORMAT="%Y-%m-%d %H:%M:%S";
 	
