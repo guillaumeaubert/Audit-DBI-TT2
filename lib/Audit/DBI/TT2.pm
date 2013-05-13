@@ -66,7 +66,7 @@ sub format_results
 {
 	my ( $self, $results ) = @_;
 	
-	local $Class::Date::DATE_FORMAT="%Y-%m-%d %H:%M:%S";
+	local $Class::Date::DATE_FORMAT = "%Y-%m-%d %H:%M:%S";
 	
 	foreach my $result ( @$results )
 	{
