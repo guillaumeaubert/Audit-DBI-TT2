@@ -42,6 +42,8 @@ my $builder = $class->new(
 	dist_version_from    => 'lib/Audit/DBI/TT2.pm',
 	build_requires       =>
 	{
+		'DBD::SQLite'          => 0,
+		'DBI'                  => 0,
 		'Scalar::Util'         => 0,
 		'Test::Exception'      => 0,
 		'Test::FailWarnings'   => 0,

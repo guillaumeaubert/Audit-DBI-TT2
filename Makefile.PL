@@ -8,6 +8,8 @@ WriteMakefile
   'PREREQ_PM' => {
                    'Audit::DBI' => '1.008001',
                    'Class::Date' => 0,
+                   'DBD::SQLite' => 0,
+                   'DBI' => 0,
                    'Data::Dumper' => 0,
                    'HTML::Entities' => 0,
                    'Scalar::Util' => 0,
