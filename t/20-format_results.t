@@ -7,7 +7,7 @@ use warnings;
 # consistent, testable output.
 BEGIN
 {
-	$ENV{'TZ'} = 'America/New_York';
+	$ENV{'TZ'} = 'GMT';
 }
 
 use DBI;
@@ -113,7 +113,7 @@ is(
 );
 is(
 	$event->{'event_time_formatted'},
-	'2012-09-07 20:14:21',
+	'2012-09-08 00:14:21',
 	'The event time is formatted correctly.',
 );
 
