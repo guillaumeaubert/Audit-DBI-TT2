@@ -1,2 +1,7 @@
 Revision history for Audit-DBI-TT2
 
+v1.0.0  2013-05-12
+        * Split Audit::DBI::TT2 off the Audit-DBI distribution, as it adds
+          several large dependencies but it is not necessary for the use of
+          the audit system itself.
+        * Added tests for all the subroutines.
