@@ -3,21 +3,20 @@
 use strict;
 use warnings;
 
-# Override the timezone to be able to format the event's date and have a
-# consistent, testable output.
-BEGIN
-{
-	$ENV{'TZ'} = 'GMT';
-}
-
-use DBI;
-use Audit::DBI;
 use Audit::DBI::TT2;
+use Audit::DBI;
+use DBI;
+use POSIX qw();
 use Scalar::Util;
 use Test::Exception;
 use Test::FailWarnings -allow_deps => 1;
 use Test::More tests => 11;
 
+
+# Override the timezone to be able to format the event's date and have a
+# consistent, testable output.
+$ENV{'TZ'} = 'America/New_York';
+POSIX::tzset();
 
 # Verify that the function can be called.
 can_ok(
@@ -113,7 +112,7 @@ is(
 );
 is(
 	$event->{'event_time_formatted'},
-	'2012-09-08 00:14:21',
+	'2012-09-07 20:14:21',
 	'The event time is formatted correctly.',
 );
 
