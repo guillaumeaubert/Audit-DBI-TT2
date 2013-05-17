@@ -5,9 +5,9 @@ use warnings;
 
 use base 'Template::Plugin';
 
-use Class::Date qw();
 use Data::Dumper;
 use HTML::Entities qw();
+use POSIX qw();
 use Template::Stash;
 
 
@@ -89,15 +89,14 @@ sub format_results
 {
 	my ( $self, $results ) = @_;
 	
-	local $Class::Date::DATE_FORMAT = "%Y-%m-%d %H:%M:%S";
-	
 	foreach my $result ( @$results )
 	{
 		$result->{information_formatted} = html_dumper( $result->get_information() );
 		$result->{diff_formatted} = html_dumper( $result->get_diff() );
-		my $event_date = Class::Date::date( $result->{event_time} );
-		$result->{event_time_formatted} = $event_date->string()
-			if defined( $event_date );
+		$result->{event_time_formatted} = POSIX::strftime(
+			"%Y-%m-%d %H:%M:%S",
+			POSIX::localtime( $result->{event_time} ),
+		);
 	}
 	
 	return $results;
