@@ -77,9 +77,6 @@ my $results =
 	$audit_event,
 ];
 
-# Configure Date::Class.
-local $Class::Date::DST_ADJUST = 1;
-
 # Instantiate a template plugin object.
 my $tt2 = Audit::DBI::TT2->new();
 
