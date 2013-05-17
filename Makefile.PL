@@ -7,11 +7,11 @@ WriteMakefile
   'VERSION_FROM' => 'lib/Audit/DBI/TT2.pm',
   'PREREQ_PM' => {
                    'Audit::DBI' => '1.008001',
-                   'Class::Date' => 0,
                    'DBD::SQLite' => 0,
                    'DBI' => 0,
                    'Data::Dumper' => 0,
                    'HTML::Entities' => 0,
+                   'POSIX' => 0,
                    'Scalar::Util' => 0,
                    'Template::Plugin' => 0,
                    'Template::Stash' => 0,

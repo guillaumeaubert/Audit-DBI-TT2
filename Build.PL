@@ -51,13 +51,13 @@ my $builder = $class->new(
 	},
 	requires             =>
 	{
-		'perl'                 => 5.006,
 		'Audit::DBI'           => 1.008001,
-		'Class::Date'          => 0,
 		'Data::Dumper'         => 0,
 		'HTML::Entities'       => 0,
+		'POSIX'                => 0,
 		'Template::Plugin'     => 0,
 		'Template::Stash'      => 0,
+		'perl'                 => 5.006,
 	},
 	add_to_cleanup       =>
 	[
