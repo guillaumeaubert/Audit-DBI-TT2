@@ -85,6 +85,9 @@ my $output;
 lives_ok(
 	sub
 	{
+		# Use fixed indentation, to be able to compare the output.
+		local $Data::Dumper::Indent = 1;
+		
 		$output = $tt2->format_results( $results );
 	},
 	'Format the results.',
