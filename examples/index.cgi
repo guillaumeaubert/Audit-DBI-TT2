@@ -23,7 +23,6 @@ use Audit::DBI;
 use CGI qw();
 use Class::Date;
 use DBI;
-use Data::Dumper;
 use Template;
 
 
