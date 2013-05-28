@@ -1,5 +1,9 @@
 Revision history for Audit-DBI-TT2
 
+v2.2.0  2013-05-28
+        * Replaced Data::Dumper with Data::Dump.
+        * Skipped time formatting test for platforms without POSIX::tzset().
+
 v2.1.1  2013-05-21
         * Use fixed indentation in tests, to be able to compare the output.
 

@@ -21,7 +21,7 @@ name: Audit-DBI-TT2
 provides:
   Audit::DBI::TT2:
     file: lib/Audit/DBI/TT2.pm
-    version: v2.1.1
+    version: v2.2.0
 requires:
   Audit::DBI: 1.008001
   Data::Dump: 0
@@ -35,4 +35,4 @@ resources:
   homepage: https://metacpan.org/release/Audit-DBI-TT2
   license: http://www.gnu.org/licenses/gpl-3.0.txt
   repository: https://github.com/guillaumeaubert/Audit-DBI-TT2
-version: v2.1.1
+version: v2.2.0
