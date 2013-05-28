@@ -22,8 +22,7 @@ my $tests =
 			'test1' => 'value1',
 			'test2' => 'value2',
 		},
-		expected => '{<br/>&nbsp;&nbsp;test1&nbsp;=&gt;&nbsp;&#39;value1&#39;,<br/>'
-			. '&nbsp;&nbsp;test2&nbsp;=&gt;&nbsp;&#39;value2&#39;<br/>}<br/>',
+		expected => '{&nbsp;test1&nbsp;=&gt;&nbsp;&quot;value1&quot;,&nbsp;test2&nbsp;=&gt;&nbsp;&quot;value2&quot;&nbsp;}',
 	},
 ];
 

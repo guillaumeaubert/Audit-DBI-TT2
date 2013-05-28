@@ -5,7 +5,7 @@ use warnings;
 
 use base 'Template::Plugin';
 
-use Data::Dumper;
+use Data::Dump qw();
 use HTML::Entities qw();
 use POSIX qw();
 use Template::Stash;
@@ -117,19 +117,7 @@ sub html_dumper
 	return undef
 		if !defined( $data );
 	
-	my $string;
-	{
-		# Skip "$VAR1 = ".
-		local $Data::Dumper::Terse = 1;
-		# Don't quote hash keys.
-		local $Data::Dumper::Quotekeys = 0;
-		# Sort hash keys.
-		local $Data::Dumper::Sortkeys = 1;
-		
-		$string = Dumper( $data );
-	}
-	
-	$string =~ s/\$VAR1 = //;
+	my $string = Data::Dump::dump( $data );
 	$string = HTML::Entities::encode_entities( $string );
 	$string =~ s/ /&nbsp;/g;
 	$string =~ s/\n/<br\/>/g;

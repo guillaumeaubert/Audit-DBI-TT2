@@ -102,12 +102,12 @@ is(
 my $event = $results->[0];
 is(
 	$event->{'diff_formatted'},
-	'{<br/>&nbsp;&nbsp;new&nbsp;=&gt;&nbsp;&#39;string2&#39;,<br/>&nbsp;&nbsp;old&nbsp;=&gt;&nbsp;&#39;string1&#39;<br/>}<br/>',
+	'{&nbsp;new&nbsp;=&gt;&nbsp;&quot;string2&quot;,&nbsp;old&nbsp;=&gt;&nbsp;&quot;string1&quot;&nbsp;}',
 	'The diff is formatted correctly.',
 );
 is(
 	$event->{'information_formatted'},
-	'{<br/>&nbsp;&nbsp;key1&nbsp;=&gt;&nbsp;&#39;value1&#39;,<br/>&nbsp;&nbsp;key2&nbsp;=&gt;&nbsp;&#39;value2&#39;<br/>}<br/>',
+	'{&nbsp;key1&nbsp;=&gt;&nbsp;&quot;value1&quot;,&nbsp;key2&nbsp;=&gt;&nbsp;&quot;value2&quot;&nbsp;}',
 	'The information is formatted correctly.',
 );
 is(
