@@ -52,7 +52,7 @@ my $builder = $class->new(
 	requires             =>
 	{
 		'Audit::DBI'           => 1.008001,
-		'Data::Dumper'         => 0,
+		'Data::Dump'           => 0,
 		'HTML::Entities'       => 0,
 		'POSIX'                => 0,
 		'Template::Plugin'     => 0,

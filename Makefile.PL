@@ -9,7 +9,7 @@ WriteMakefile
                    'Audit::DBI' => '1.008001',
                    'DBD::SQLite' => 0,
                    'DBI' => 0,
-                   'Data::Dumper' => 0,
+                   'Data::Dump' => 0,
                    'HTML::Entities' => 0,
                    'POSIX' => 0,
                    'Scalar::Util' => 0,
