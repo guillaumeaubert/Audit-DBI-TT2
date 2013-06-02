@@ -1,5 +1,8 @@
 Revision history for Audit-DBI-TT2
 
+v2.2.1  2013-06-01
+        * Improved test to detect if tzset() is available.
+
 v2.2.0  2013-05-28
         * Replaced Data::Dumper with Data::Dump.
         * Skipped time formatting test for platforms without POSIX::tzset().
