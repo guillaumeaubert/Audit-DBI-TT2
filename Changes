@@ -1,5 +1,8 @@
 Revision history for Audit-DBI-TT2
 
+v2.2.2  2013-06-02
+        * Fixed conditional.
+
 v2.2.1  2013-06-01
         * Improved test to detect if tzset() is available.
 
