@@ -16,7 +16,7 @@ use Test::More tests => 12;
 # Check if POSIX::tzset() exists on the current architecture. Strawberry Perl
 # in particular seems to be missing it.
 eval { POSIX::tzset(); };
-my $has_tzset = $@ ? 1 : 0;
+my $has_tzset = $@ ? 0 : 1;
 
 # Override the timezone to be able to format the event's date and have a
 # consistent, testable output.
