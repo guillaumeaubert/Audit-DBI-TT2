@@ -10,15 +10,13 @@ use POSIX qw();
 use Scalar::Util;
 use Test::Exception;
 use Test::FailWarnings -allow_deps => 1;
-use Test::More tests => 13;
+use Test::More tests => 12;
 
 
 # Check if POSIX::tzset() exists on the current architecture. Strawberry Perl
 # in particular seems to be missing it.
-my $has_tzset = can_ok(
-	'POSIX',
-	'tzset',
-);
+eval { POSIX::tzset(); };
+my $has_tzset = $@ ? 1 : 0;
 
 # Override the timezone to be able to format the event's date and have a
 # consistent, testable output.
@@ -132,17 +130,22 @@ is(
 	'The information is formatted correctly.',
 );
 
-SKIP:
+# If we were able to set the timezone, we know the exact value to check for.
+# Otherwise, depending on the timezone, we could end up with either 2012-09-07
+# or 2012-09-08.
+if ( $has_tzset )
 {
-	skip(
-		'POSIX::tzset() is not available, cannot verify time formatting.',
-		1,
-	) if !$has_tzset;
-	
 	is(
 		$event->{'event_time_formatted'},
 		'2012-09-07 20:14:21',
 		'The event time is formatted correctly.',
+	);
+}
+else
+{
+	like(
+		$event->{'event_time_formatted'},
+		qr/^2012-09-0[78]/
 	);
 }
 
