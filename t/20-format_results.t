@@ -18,6 +18,12 @@ use Test::More tests => 12;
 eval { POSIX::tzset(); };
 my $has_tzset = $@ ? 0 : 1;
 
+# Some builds of Perl v.5.14.* and v5.16.* on Windows seem to have tzset(), but
+# setting it does not actually change the timezone due to a bug. Fall back on
+# the simpler test.
+$has_tzset = 0
+	if ( $^O eq 'MSWin32' ) && ( $^V =~ /^v5\.[14|16]\./ );
+
 # Override the timezone to be able to format the event's date and have a
 # consistent, testable output.
 SKIP:
