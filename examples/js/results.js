@@ -1,5 +1,5 @@
 /**
- * Audit::DBI::TT2 v2.2.2
+ * Audit::DBI::TT2 v2.2.3
  * https://metacpan.org/release/Audit-DBI
  *
  * Copyright 2010-2013 Guillaume Aubert

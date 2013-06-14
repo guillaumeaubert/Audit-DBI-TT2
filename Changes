@@ -1,5 +1,10 @@
 Revision history for Audit-DBI-TT2
 
+v2.2.3  2013-06-14
+        * Fall back to a simpler test on some architectures with a non-working
+          tzset().
+        * Added Coveralls.io support and badge.
+
 v2.2.2  2013-06-02
         * Fixed conditional.
 
