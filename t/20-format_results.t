@@ -22,7 +22,7 @@ my $has_tzset = $@ ? 0 : 1;
 # setting it does not actually change the timezone due to a bug. Fall back on
 # the simpler test.
 $has_tzset = 0
-	if ( $^O eq 'MSWin32' ) && ( $^V =~ /^v5\.[14|16]\./ );
+	if ( $^O eq 'MSWin32' ) && ( $^V =~ /^v5\.(?:14|16)\./ );
 
 # Override the timezone to be able to format the event's date and have a
 # consistent, testable output.
