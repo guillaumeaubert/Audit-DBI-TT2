@@ -1,5 +1,8 @@
 Revision history for Audit-DBI-TT2
 
+v2.2.4  2013-06-15
+        * Fixed test conditional.
+
 v2.2.3  2013-06-14
         * Fall back to a simpler test on some architectures with a non-working
           tzset().

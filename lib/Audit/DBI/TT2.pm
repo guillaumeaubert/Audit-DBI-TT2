@@ -18,11 +18,11 @@ Audit::DBI::TT2 - A Template Toolkit plugin to display audit events recorded by 
 
 =head1 VERSION
 
-Version 2.2.3
+Version 2.2.4
 
 =cut
 
-our $VERSION = '2.2.3';
+our $VERSION = '2.2.4';
 
 
 =head1 SYNOPSIS
