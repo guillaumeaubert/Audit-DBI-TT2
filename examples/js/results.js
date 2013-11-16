@@ -33,7 +33,7 @@ $(document).ready(
 				);
 			}
 		);
-		
+
 		// Activate toggling all
 		$('#toggle_all').click(
 			function()

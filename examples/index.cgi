@@ -81,7 +81,7 @@ sub search
 		'search.tt2',
 		{},
 	) || die $template->error();
-	
+
 	return;
 }
 
@@ -110,14 +110,14 @@ sub results
 				}
 			);
 		}
-		
+
 		# Date ranges.
 		foreach my $value ( map { split( /\s*,\s*/, $_ ) } ( $cgi->param( 'date_range' . $include ) ) )
 		{
 			my @temp = split( '::', $value );
 			my @begin = split( '/', $temp[0] );
 			my @end = split( '/', $temp[1] );
-			
+
 			push(
 				@{ $param{'date_ranges'} },
 				{
@@ -127,7 +127,7 @@ sub results
 				}
 			);
 		}
-		
+
 		# Events.
 		foreach my $value ( map { split( /\s*,\s*/, $_ ) } ( $cgi->param( 'event' . $include ) ) )
 		{
@@ -139,7 +139,7 @@ sub results
 				}
 			);
 		}
-		
+
 		# Account logged-in.
 		foreach my $value ( map { split( /\s*,\s*/, $_ ) } ( $cgi->param( 'account_logged_in' . $include ) ) )
 		{
@@ -151,7 +151,7 @@ sub results
 				}
 			);
 		}
-		
+
 		# Account affected.
 		foreach my $value ( map { split( /\s*,\s*/, $_ ) } ( $cgi->param( 'account_affected' . $include ) ) )
 		{
@@ -163,7 +163,7 @@ sub results
 				}
 			);
 		}
-		
+
 		# Subjects.
 		foreach my $value ( $cgi->param( 'subject_type' . $include ) )
 		{
@@ -177,7 +177,7 @@ sub results
 				}
 			);
 		}
-		
+
 		# Values.
 		foreach my $value ( $cgi->param( 'indexed_data' . $include ) )
 		{
@@ -192,7 +192,7 @@ sub results
 			);
 		}
 	}
-	
+
 	# Get results.
 	my $need_at_least_one_criteria;
 	my $results;
@@ -207,12 +207,12 @@ sub results
 		);
 		$results = $audit->review( %param );
 	}
-	
+
 	my $querystring = $ENV{'QUERY_STRING'};
 	$querystring .= '&' unless substr( $querystring, -1) eq '&';
 	$querystring =~ s/action=results&//;
 	$querystring =~ s/&$//;
-	
+
 	# Output the template.
 	$template->process(
 		'results.tt2',
@@ -223,7 +223,7 @@ sub results
 			refine_url                 => "?$querystring",
 		},
 	) || die $template->error();
-	
+
 	return;
 }
 

@@ -1,11 +1,11 @@
 [% WRAPPER wrapper.tt2 page_title='Search Results' %]
-	
+
 	<h1>
 		Audit :: Search Results
 	</h1>
-	
+
 	<p>&nbsp;</p>
-	
+
 	[% IF need_at_least_one_criteria %]
 		<p>
 			Please select at least one criteria to search on.
@@ -14,9 +14,9 @@
 		<style type="text/css">
 			@import "css/results.css";
 		</style>
-		
+
 		<script type="text/javascript" src="js/results.js"></script>
-		
+
 		<p>
 			Found: [% found %] results.
 			<a href="[% refine_url %]">Refine search results</a>
@@ -24,7 +24,7 @@
 			<a id="toggle_all">Toggle all</a>
 		</p>
 		<p>&nbsp;</p>
-		
+
 		<table cellspacing="0" cellpadding="4" align="center" id="results">
 			<thead>
 				<tr bgcolor="lightgrey">
@@ -124,5 +124,5 @@
 			</tbody>
 		</table>
 	[% END %]
-	
+
 [% END %]

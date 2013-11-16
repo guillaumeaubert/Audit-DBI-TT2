@@ -1,20 +1,20 @@
 [% WRAPPER wrapper.tt2 page_title='Search' %]
-	
+
 	<style type="text/css">
 		@import "css/search.css";
 	</style>
-	
+
 	<script type="text/javascript" src="js/search.js"></script>
-	
+
 	<h1>
 		Audit :: Search
 	</h1>
-	
+
 	<p style="font-size: 14px; font-weight: bold; color: red;">
 		IMPORTANT: searching audit logs takes a lot of resources and may bring a server down if used with broad criteria.<br/>
 		Please narrow your search criteria as much as possible, and always use a date range.
 	</p>
-	
+
 	<div class="box">
 		<div id="headers">
 			<h3>Criteria</h3>
@@ -27,7 +27,7 @@
 			<input type="button" value="Submit" onClick="Javascript:submit_search();" style="float: right;">
 		</div>
 	</div>
-	
+
 	<div id="model_row">
 		<div class="row">
 			<div class="remove">
@@ -51,7 +51,7 @@
 					<option value="indexed_data">Search Indexed Data</option>
 				</select>
 			</div>
-			
+
 			<!-- Search by IP range -->
 			<div class="values values_ip_address">
 				<div class="label">values:</div>
@@ -59,7 +59,7 @@
 					<input type="text" name="ip_addresses">
 				</div>
 			</div>
-			
+
 			<!-- Search by date range -->
 			<div class="values values_date_range">
 				<div class="label">from:</div>
@@ -71,7 +71,7 @@
 					<input type="text" name="date_range_to" class="datepicker">
 				</div>
 			</div>
-			
+
 			<!-- Search by subject type -->
 			<div class="values values_subject_type">
 				<div class="label">type:</div>
@@ -83,7 +83,7 @@
 					<input type="text" name="subject_ids">
 				</div>
 			</div>
-			
+
 			<!-- Search by event -->
 			<div class="values values_event">
 				<div class="label" style="clear: left;">Value:</div>
@@ -91,7 +91,7 @@
 					<input type="text" name="event">
 				</div>
 			</div>
-			
+
 			<!-- Search by account logged in -->
 			<div class="values values_account_logged_in">
 				<div class="label" style="clear: left;">IDs:</div>
@@ -99,7 +99,7 @@
 					<input type="text" name="account_logged_in">
 				</div>
 			</div>
-			
+
 			<!-- Search by account affected -->
 			<div class="values values_account_affected">
 				<div class="label" style="clear: left;">IDs:</div>
@@ -107,7 +107,7 @@
 					<input type="text" name="account_affected">
 				</div>
 			</div>
-			
+
 			<!-- Search by indexed values -->
 			<div class="values values_indexed_data">
 				<div class="label">key:</div>
@@ -121,5 +121,5 @@
 			</div>
 		</div>
 	</div>
-	
+
 [% END %]

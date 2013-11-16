@@ -32,4 +32,4 @@ ok(
 	$tt2->isa( 'Audit::DBI::TT2' ),
 	'The object has the type Audit::DBI::TT2.',
 ) || diag( explain( $tt2 ) );
-	
+

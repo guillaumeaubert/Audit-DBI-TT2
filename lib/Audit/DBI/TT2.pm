@@ -31,7 +31,7 @@ In your Perl code:
 
 	use Audit::DBI::TT2;
 	use Template;
-	
+
 	my $template = Template->new(
 		{
 			PLUGINS =>
@@ -88,7 +88,7 @@ Format the following fields for display as HTML:
 sub format_results
 {
 	my ( $self, $results ) = @_;
-	
+
 	foreach my $result ( @$results )
 	{
 		$result->{information_formatted} = html_dumper( $result->get_information() );
@@ -98,7 +98,7 @@ sub format_results
 			POSIX::localtime( $result->{event_time} ),
 		);
 	}
-	
+
 	return $results;
 }
 
@@ -116,12 +116,12 @@ sub html_dumper
 	my ( $data ) = @_;
 	return undef
 		if !defined( $data );
-	
+
 	my $string = Data::Dump::dump( $data );
 	$string = HTML::Entities::encode_entities( $string );
 	$string =~ s/ /&nbsp;/g;
 	$string =~ s/\n/<br\/>/g;
-	
+
 	return $string;
 }
 

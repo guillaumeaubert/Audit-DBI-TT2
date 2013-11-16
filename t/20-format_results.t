@@ -32,7 +32,7 @@ SKIP:
 		'POSIX::tzset() is not available, cannot set timezone.',
 		1,
 	) if !$has_tzset;
-	
+
 	lives_ok(
 		sub
 		{
@@ -112,7 +112,7 @@ lives_ok(
 	{
 		# Use fixed indentation, to be able to compare the output.
 		local $Data::Dumper::Indent = 1;
-		
+
 		$output = $tt2->format_results( $results );
 	},
 	'Format the results.',
