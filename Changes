@@ -1,5 +1,10 @@
 Revision history for Audit-DBI-TT2
 
+v2.2.5  2014-04-20
+        - Fixed "package version matches dist version" for CPANTS.
+        - Fixed license declared in meta files.
+        - General cleanup.
+
 v2.2.4  2013-06-15
         - Fixed test conditional.
 
