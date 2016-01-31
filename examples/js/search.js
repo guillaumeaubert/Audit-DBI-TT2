@@ -2,7 +2,7 @@
  * Audit::DBI::TT2 v2.2.5
  * https://metacpan.org/release/Audit-DBI
  *
- * Copyright 2010-2015 Guillaume Aubert
+ * Copyright 2010-2016 Guillaume Aubert
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License version 3 as published by
