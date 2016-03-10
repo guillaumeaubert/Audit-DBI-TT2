@@ -4,6 +4,7 @@ Audit-DBI-TT2
 [![Build Status](https://travis-ci.org/guillaumeaubert/Audit-DBI-TT2.svg?branch=master)](https://travis-ci.org/guillaumeaubert/Audit-DBI-TT2)
 [![Coverage Status](https://coveralls.io/repos/guillaumeaubert/Audit-DBI-TT2/badge.svg?branch=master)](https://coveralls.io/r/guillaumeaubert/Audit-DBI-TT2?branch=master)
 [![CPAN](https://img.shields.io/cpan/v/Audit-DBI-TT2.svg)](https://metacpan.org/release/Audit-DBI-TT2)
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 
 A Template Toolkit plugin to display audit events recorded by [Audit::DBI]
 (https://metacpan.org/release/Audit-DBI).
