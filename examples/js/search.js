@@ -2,7 +2,7 @@
  * Audit::DBI::TT2 v2.2.5
  * https://metacpan.org/release/Audit-DBI
  *
- * Copyright 2010-2016 Guillaume Aubert
+ * Copyright 2010-2017 Guillaume Aubert
  *
  * This code is free software; you can redistribute it and/or modify it under the
  * same terms as Perl 5 itself.
