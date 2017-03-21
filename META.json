@@ -44,7 +44,7 @@
    "provides" : {
       "Audit::DBI::TT2" : {
          "file" : "lib/Audit/DBI/TT2.pm",
-         "version" : "v2.2.5"
+         "version" : "v2.3.0"
       }
    },
    "release_status" : "stable",
@@ -60,5 +60,5 @@
          "url" : "https://github.com/guillaumeaubert/Audit-DBI-TT2"
       }
    },
-   "version" : "v2.2.5"
+   "version" : "v2.3.0"
 }

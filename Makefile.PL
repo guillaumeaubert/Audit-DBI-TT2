@@ -3,27 +3,27 @@ require 5.006;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'NAME' => 'Audit::DBI::TT2',
-  'VERSION_FROM' => 'lib/Audit/DBI/TT2.pm',
-  'PREREQ_PM' => {
-                   'Audit::DBI' => '1.008001',
-                   'DBD::SQLite' => 0,
-                   'DBI' => 0,
-                   'Data::Dump' => 0,
-                   'HTML::Entities' => 0,
-                   'POSIX' => 0,
-                   'Scalar::Util' => 0,
-                   'Template::Plugin' => 0,
-                   'Template::Stash' => 0,
-                   'Test::Exception' => 0,
-                   'Test::FailWarnings' => 0,
-                   'Test::More' => '0.94'
-                 },
-  'INSTALLDIRS' => 'site',
-  'EXE_FILES' => [],
-  'PL_FILES' => {},
   'test' => {
               'TESTS' => 't/*.t'
-            }
+            },
+  'NAME' => 'Audit::DBI::TT2',
+  'PREREQ_PM' => {
+                   'Template::Plugin' => 0,
+                   'Test::FailWarnings' => 0,
+                   'DBD::SQLite' => 0,
+                   'Data::Dump' => 0,
+                   'Scalar::Util' => 0,
+                   'POSIX' => 0,
+                   'Test::More' => '0.94',
+                   'Template::Stash' => 0,
+                   'DBI' => 0,
+                   'Test::Exception' => 0,
+                   'Audit::DBI' => '1.008001',
+                   'HTML::Entities' => 0
+                 },
+  'VERSION_FROM' => 'lib/Audit/DBI/TT2.pm',
+  'EXE_FILES' => [],
+  'PL_FILES' => {},
+  'INSTALLDIRS' => 'site'
 )
 ;
